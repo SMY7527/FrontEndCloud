@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      width: 500px;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .img {
+      width: 350px;
+      height: 350px;
+      /* background-color: blue; */
+      background-image: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=848e0c78-0595-4cee-b9b7-f17c17992e9e');
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+    }
+
+    .info {
+      width: 80%;
+      /* border: 1px solid black; */
+      margin: 0 auto;
+    }
+
+    /* 주문정보 css */
+    .order_wrap {
+      /* border: 1px solid black; */
+      width: 85%;
+      margin: 0 auto;
+
+      margin-top: 20px;
+    }
+
+    .order_wrap input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .order_wrap select {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .order_wrap button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- 상품 정보 영역 -->
+    <div class="goods_info">
+      <!-- 상품 이미지 영역 -->
+      <div class="img"></div>
+      
+      <!-- 상품 정보 -->
+      <div class="info">
+        <h1>대관령 황태</h1>
+        <p>
+          겨울 내내 녹았다 얼었다를 반복한 맛 좋은 대관령 황태입니다.<br>
+          가격 : <span>32000원</span>/10마리
+        </p>
+      </div>
+    </div>
+
+    <!-- 주문 영역 -->
+    <div class="order_wrap">
+      <div>--주문내역--</div>
+      <div>주문자 이름 <input type="text"></div>
+      <div>
+        수량
+        <select>
+          <option value="">수량을 선택하시오</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+      </div>
+      <div>주문금액 <input type="text"></div>
+      <div>전화번호 <input type="text"></div>
+      <div><button>order</button></div>
+    </div>
+  </div>
+</body>
+</html>
