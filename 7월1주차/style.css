@@ -1,0 +1,142 @@
+body {
+  /* font-family: "Karla", sans-serif; */
+  font-family: "Gugi", sans-serif;
+  background-color: #22252b;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+header {
+  /* border: 1px solid palegreen; */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  background-color: #22252b;
+}
+
+header img {
+  width: 150px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+nav {
+  /* display: flex; */
+  padding-left: 30px;
+}
+
+nav .ul_week {
+  display: flex;
+  align-items: center;
+}
+
+nav .ul_week li {
+  padding: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+nav .ul_week li:hover {
+  font-weight: bold;
+  background-color: #15181d;
+}
+
+nav .ul_week li:hover .ul_day {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul_day {
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #15181d;
+}
+
+nav .ul_day li {
+  font-size: 16px;
+  padding: 0;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid palegreen; */
+}
+
+.main_title {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+  /* border: 1px solid palegreen; */
+}
+
+section {
+  margin: 20px;
+  padding: 30px 56px;
+  /* border: 1px solid palegreen; */
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .2);
+  scroll-margin-top: 80px;
+}
+
+.subject_list li {
+  margin: 20px;
+}
+
+.subject_list_chk {
+  all: unset;
+  display: block;
+}
+
+.subject_list_chk:hover + label {
+  color: #9acd32;
+}
+
+.subject_list_chk:checked ~ .hidden_ul {
+  display: block;
+  color: #fff;
+}
+
+.hidden_ul {
+  display: none;
+}
+
+.hidden_ul a:hover {
+  color: #9acd32;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, .2);
+  margin-top: 50px;
+  padding: 0 50px;
+  /* border: 1px solid palegreen; */
+}
+
+footer p {
+  margin: 0;
+  padding: 30px;
+  font-size: 20px;
+}

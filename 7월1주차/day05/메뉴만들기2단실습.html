@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    .menu_item {
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid black;
+      text-align: center;
+
+      position: relative;
+    }
+
+    .menu_item:hover .hidden_sub_menu {
+      display: block;
+    }
+
+    .hidden_sub_menu {
+      width: 80%;
+      border: 1px solid black;
+      background-color: blue;
+
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 50px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <!-- 상위메뉴 -->
+    <li class="menu_item">
+      빵
+      <!-- 하위메뉴 -->
+      <ul class="hidden_sub_menu">
+        <li>빵 하위메뉴1</li>
+        <li>빵 하위메뉴2</li>
+        <li>빵 하위메뉴3</li>
+        <li>빵 하위메뉴4</li>
+      </ul>
+    </li>
+    <li class="menu_item">
+      과일
+      <!-- 하위메뉴 -->
+      <ul class="hidden_sub_menu">
+        <li>빵 하위메뉴1</li>
+        <li>빵 하위메뉴2</li>
+        <li>빵 하위메뉴3</li>
+        <li>빵 하위메뉴4</li>
+      </ul>
+    </li>
+    <li class="menu_item">생선</li>
+    <li class="menu_item">고기</li>
+  </ul>
+</body>
+</html>

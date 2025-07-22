@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      border: 1px solid black;
+      height: 200px;
+      display: flex;
+    }
+
+    .header > div {
+      width: 33.3%;
+      height: 200px;
+      border: 1px solid black;
+    }
+
+    .title-wrap {
+      position: relative;
+    }
+
+    .title-wrap img {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    /* 검색바 */
+    .search-wrap {
+      position: relative;
+    }
+
+    .search {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+    }
+
+    input[type=text] {
+      width: 400px;
+      height: 40px;
+      border-radius: 10px 0 0 10px;
+      border: 0.1px solid #ccc;
+      padding: 0;
+    }
+
+    button {
+      width: 50px;
+      height: 43px;
+      border-radius: 0 10px 10px 0;
+      border: 0.1px solid #ccc;
+      /* margin: 0; */
+      padding: 0;
+    }
+
+    /* 메뉴 */
+    .menu {
+      /* border: 1px solid black; */
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      font-size: 12px;
+    }
+
+    .menu li {
+      /* border: 1px solid black; */
+      padding-right: 10px;
+    }
+
+    .menu li img {
+      margin-left: 5px;
+    }
+
+    span {
+      display: block;
+    }
+
+    .menu-wrap {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <!-- title -->
+    <div class="title-wrap">
+      <img src="./lotte.gif" alt="롯데 타이틀 이미지">
+    </div>
+
+    <!-- search -->
+    <div class="search-wrap">
+      <div class="search">
+        <input type="text">
+        <button>조회</button>
+      </div>
+    </div>
+
+    <!-- menu -->
+    <div class="menu-wrap">
+      <ul class="menu">
+        <li><img src="./1.png" alt=""><span>로그인</span></li>
+        <li><img src="./2.png" alt=""><span>내정보</span></li>
+        <li><img src="./3.png" alt=""><span>장바구니</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!-- 
+  얄코 노션 페이지를 참조
+  여태 했던 강의들을 일차 순으로 목록화
+  링크를 연결
+  헤더의 메뉴는 누르면 해당 위치로 스크롤되게 기능
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Gugi&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <img src="./acorn_logo.png" alt="에이콘 아카데미 로고">
+    <nav>
+      <ul class="ul_week">
+        <li>1주차
+          <ul class="ul_day">
+            <li><a href="#d1">1일 차</a></li>
+            <li><a href="#d2">2일 차</a></li>
+            <li><a href="#d3">3일 차</a></li>
+            <li><a href="#d4">4일 차</a></li>
+            <li><a href="#d5">5일 차</a></li>
+          </ul>
+        </li>
+        <li>2주차
+          <ul class="ul_day">
+            <li>1일 차</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main_title">
+      <h1>자바(JAVA) 웹개발자 양성과정(클라우드)</h1>
+    </div>
+    <section id="d1">
+      <h1>
+        ✏️ 1일 차
+      </h1>
+      <ol class="subject_list">
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_1_1">
+          <label for="chkbox_1_1">HTML과 CSS맛보기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day01/cl.html" target="_blank">자기소개서 만들기</a></li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <section id="d2">
+      <h1>
+        ✏️ 2일 차
+      </h1>
+      <ol class="subject_list">
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_2_1">
+          <label for="chkbox_2_1">영역 태그 &lt;div&gt;</label>
+          <ul class="hidden_ul">
+            <li><a href="./day02/div.html" target="_blank">div태그</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_2_2">
+          <label for="chkbox_2_2">block, inline-block, inline</label>
+          <ul class="hidden_ul">
+            <li><a href="./day02/blockTag.html" target="_blank">block태그</a></li>
+            <li><a href="./day02/inline.html" target="_blank">inline태그</a></li>
+            <li><a href="./day02/inline-block.html" target="_blank">inline-block태그</a></li>
+            <li><a href="./day02/display속성변경.html" target="_blank">display속성변경</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_2_3">
+          <label for="chkbox_2_3">입력 태그 &lt;input&gt;</label>
+          <ul class="hidden_ul">
+            <li><a href="./day02/userInputTag.html" target="_blank">input태그</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_2_4">
+          <label for="chkbox_2_4">사과 주문하기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day02/사과실습1.html" target="_blank">사과 실습</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_2_5">
+          <label for="chkbox_2_5">실습</label>
+          <ul class="hidden_ul">
+            <li><a href="./day02/주문하기 실습.html" target="_blank">주문화면 실습</a></li>
+            <li><a href="./day02/회원가입.html" target="_blank">회원가입 실습</a></li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <section id="d3">
+      <h1>
+        ✏️ 3일 차
+      </h1>
+      <ol class="subject_list">
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_3_1">
+          <label for="chkbox_3_1">박스 모델의 구성요소 이해하기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day03/box_model.html" target="_blank">박스 모델</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_3_2">
+          <label for="chkbox_3_2">CSS를 적용하는 3가지 방법(인라인, 내부, 외부)</label>
+          <ul class="hidden_ul">
+            <li><a href="./day03/인라인스타일.html" target="_blank">인라인 스타일</a></li>
+            <li><a href="./day03/내부스타일.html" target="_blank">내부 스타일</a></li>
+            <li><a href="./day03/외부스타일.html" target="_blank">외부 스타일</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_3_3">
+          <label for="chkbox_3_3">다양한 CSS 선택자</label>
+          <ul class="hidden_ul">
+            <li><a href="./day03/css선택자.html" target="_blank">CSS 선택자</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_3_4">
+          <label for="chkbox_3_4">FLEX속성을 사용해서 가로 배치</label>
+          <ul class="hidden_ul">
+            <li><a href="./day03/가로방향레이아웃만들기.html" target="_blank">display: flex</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_3_5">
+          <label for="chkbox_3_5">푸터(Footer) 영역 구현해보기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day03/풋터만들기GS.html" target="_blank">풋터 만들기</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_3_6">
+          <label for="chkbox_3_6">실습</label>
+          <ul class="hidden_ul">
+            <li><a href="./day03/상품리스트실습.html" target="_blank">상품리스트 실습</a></li>
+            <li><a href="./day03/풋터만들기_잡코리아.html" target="_blank">풋터만들기(잡코리아)</a></li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <section id="d4">
+      <h1>
+        ✏️ 4일 차
+      </h1>
+      <ol class="subject_list">
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_4_1">
+          <label for="chkbox_4_1">flex를 사용하여 자식요소 정렬하기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day04/flex1.html" target="_blank">flex-wrap</a></li>
+            <li><a href="./day04/flex2.html" target="_blank">justify-content(가로), align-items(세로)</a></li>
+            <li><a href="./day04/flex3.html" target="_blank">justify-content: space-between</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_4_2">
+          <label for="chkbox_4_2">position속성을 사용하여 배치하기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day04/position.html" target="_blank">position</a></li>
+            <li><a href="./day04/position_fixed.html" target="_blank">position:fixed</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_4_3">
+          <label for="chkbox_4_3">실습</label>
+          <ul class="hidden_ul">
+            <li><a href="./day04/검색바1.html" target="_blank">검색바 만들기</a></li>
+            <li><a href="./day04/구글index.html" target="_blank">구글페이지 만들기</a></li>
+            <li><a href="./day04/버튼만들기실습.html" target="_blank">버튼 꾸미기</a></li>
+            <li><a href="./day04/review.html" target="_blank">리뷰 만들기</a></li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+    <section id="d5">
+      <h1>
+        ✏️ 5일 차
+      </h1>
+      <ol class="subject_list">
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_5_1">
+          <label for="chkbox_5_1">시맨틱 태그 (header, nav, section, article, figure, footer) 사용하기</label>
+          <ul class="hidden_ul">
+            <li><a href="./day05/시맨틱태그.html" target="_blank">시맨틱 태그</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_5_2">
+          <label for="chkbox_5_2">구글 폰트 연습</label>
+          <ul class="hidden_ul">
+            <li><a href="./day05/구글폰트연습하기.html" target="_blank">구글 폰트 적용하기</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="subject_list_chk" id="chkbox_5_3">
+          <label for="chkbox_5_3">실습</label>
+          <ul class="hidden_ul">
+            <li><a href="./day05/별붙이기문제.html" target="_blank">별 붙이기</a></li>
+            <li><a href="./day05/갤러리화면만들기.html" target="_blank">갤러리 화면 만들기</a></li>
+            <li><a href="./day05/장바구니실습.html" target="_blank">장바구니</a></li>
+            <li><a href="./day05/메뉴1.html" target="_blank">메뉴 만들기 1단</a></li>
+            <li><a href="./day05/메뉴만들기2단실습.html" target="_blank">메뉴 만들기 2단</a></li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <p>
+      © 2025 07 21 웹 페이지 제작자 : 손민영<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;kdo7527@naver.com
+    </p>
+  </footer>
+</body>
+
+</html>
