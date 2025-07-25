@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // if문 : 분기문
+    // 조건에 따라 수행하는 코드를 다르게 할 수 있음
+    // 1) if(조건) {}
+    let point = 3000;
+    if(point >= 2000) {
+      console.log("포인트 사용가능");
+    }
+
+    // 2) 
+    // if(조건) {
+    // 조건이 만족할 떄 수행
+    // }
+    // else {
+    // 위의 조건이 아닌 모든 경우에 수행
+    // }
+    point = 1500;
+    if(point >= 2000) {
+      console.log("포인트 사용가능");
+    }
+    else {
+      console.log("포인트 사용 불가. 2000이상이어야 사용 가능");
+    }
+
+    // 3) 
+    // if(조건) {
+    // 조건이 만족할 떄 수행
+    // }
+    // else if(조건) {
+    // 위의 조건이 아닌 경우 다음 조건을 체크함
+    // }
+    let korScore = 85;
+    if(korScore >= 90) {
+      console.log("A");
+    }
+    else if(korScore >= 80) {
+      console.log("B");
+    }
+    else if(korScore >= 70) {
+      console.log("C");
+    }
+    else if(korScore >= 60) {
+      console.log("D");
+    }
+    else {
+      console.log("FFFFFFFFFFFFFFF");
+    }
+
+    // 주의사항!!!
+    /*
+    if(조건){수행할코드}
+    if(조건){수행할코드}
+    if(조건){수행할코드}
+    */
+    let scroeMath = 100;
+    let hakjum;
+    if(scroeMath >= 90) {hakjum = "A학점";}
+    if(scroeMath >= 80) {hakjum = "B학점";}
+    if(scroeMath >= 70) {hakjum = "C학점";}
+    console.log(scroeMath + "점 " + hakjum);  // 홀리몰리마더파더왓더뻑???
+    // 논리적인 오류 발생
+  </script>
+</body>
+</html>

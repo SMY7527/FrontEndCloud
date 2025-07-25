@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 5 숫자 삼각형 출력
+    //   문제: 사용자로부터 숫자 N을 입력받아 다음과 같은 숫자 삼각형을 출력하세요.
+    //   예: N = 4
+    //   1
+    //   12
+    //   123
+    //   1234
+    document.write("사용자로부터 숫자 N을 입력받아 다음과 같은 숫자 삼각형을 출력하세요.<br>");
+
+    let num;
+    while(true) {
+      num = parseInt(prompt("양의 정수를 입력하시오"));
+      console.log(typeof(num));
+      console.log(num);
+      if(isNaN(num) || num < 0) {
+        alert("잘못된 입력");
+      }
+      else {
+        break;
+      }
+    }
+    
+
+    document.write("N = " + num + "<br>");
+    for(let i = 1; i < (num + 1); i++) {
+      for(let j = 0; j < i; j++) {
+        document.write(j+1);
+      }
+      document.write("<br>");
+    }
+  </script>
+</body>
+</html>

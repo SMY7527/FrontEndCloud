@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 세개의 수 에서 가장 큰 값 구하기
+    // 배열
+
+    // 배열 선언
+    let arr = [];
+    let arr2 = new Array(3);
+    let arr3 = [7, 10, 15];  // 배열 선언 및 초기화
+
+    let max = arr3[0];
+    for(let i = 1; i < arr3.length; i++) {
+      if(arr3[i] > max) max = arr3[i];
+    }
+    console.log("최대값 : " + max);
+  </script>
+</body>
+</html>

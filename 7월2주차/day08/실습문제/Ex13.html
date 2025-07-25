@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 13.  "stop"입력될 때까지 입력한 입력을 출력하기
+    document.write("'stop'입력될 때까지 입력한 입력을 출력하기<br>");
+    let temp;
+    while(true) {
+      temp = prompt();
+      if(temp == "stop") {break;}
+      document.write(temp);
+    }
+  </script>
+</body>
+</html>

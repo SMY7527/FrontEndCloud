@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 연산자는 연산의 결과가 반드시 발생함
+    // 산술 연산자 : +, -, *, /, %
+    // 더하기
+    let a = 10;
+    let b = 20;
+
+    let result = a + b;
+    console.log(result);
+
+
+    // 빼기
+    let c = 15;
+    let d = 5;
+    let result2 = c - d;
+    console.log(result2);
+
+
+    // 곱하기
+    let e = 15;
+    let f = 5;
+    let result3 = e * f;
+    console.log(result3);
+
+
+    // 나누기
+    let g = 15;
+    let h = 5;
+    let result4 = g / h;
+    console.log(result4);
+
+
+    // 몫만 갖고 싶다면
+    let result5 = Math.floor(result4);
+    console.log(result5);
+
+
+    // 나머지 연산
+    let num = 10;
+    let divisor = 3;
+    let 나머지 = num % divisor; // 10 / 3 => 나머지를 구함
+
+    // 짝수판별
+    // 어떤수든 2로 나눈 나머지는 0, 1
+    let num2 = 4;
+    let isEven = num2 % 2 == 0 ? true : false;
+    if(isEven) {
+      console.log("짝수입니다.");
+    }
+    else {
+      console.log("홀수입니다.");
+    }
+
+
+    // 거듭제곱
+    let base = 2;
+    let 지수 = 3;
+    let result6 = base ** 지수;
+    console.log(result6);
+  </script>
+</body>
+</html>

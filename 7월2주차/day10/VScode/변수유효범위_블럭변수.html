@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+        /*
+
+        변수선언 위치에 따라 전역변수,  지역(함수)변수,  블럭변수 ( for, if)
+        */
+
+
+        //블럭변수
+
+        for(let i=1; i<=5; i++){  //for 블럭시작
+            console.log( i);
+        } //for 블럭 끝 
+
+        //console.log( i);
+
+
+        if( 5>3){
+            let result="5가 크다";            
+            console.log( result);
+        }
+
+        //블럭안에서 만들어진 변수는 그 블럭안에서만 유효하다.
+
+       //console.log( result);
+
+
+       {
+
+        let i=1;
+        console.log( i);
+       }
+
+       console.log( i);
+
+
+
+       
+
+    </script>
+    
+</body>
+</html>

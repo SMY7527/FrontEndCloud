@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // prompt를 이용해서 입력받기
+    // 입력된 이름이 stop이면 종료하기
+
+    let name;
+    while(true) { // 무한루프 => 탈출조건을 반드시 줘야 한다
+      name = prompt();
+      if(name == "stop") break;
+      alert(name);
+    }
+  </script>
+</body>
+</html>

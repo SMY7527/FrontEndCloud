@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 6. 홀수와 짝수 합 구하기
+    //   문제: 1부터 사용자가 입력한 숫자 N까지의 홀수와 짝수를 구분하여 각각의 합을 출력하세요.
+    //   예: N = 10 → 홀수 합 = 25, 짝수 합 = 30
+    document.write("1부터 사용자가 입력한 숫자 N까지의 홀수와 짝수를 구분하여 각각의 합을 출력하세요.<br>");
+
+    let num;
+    while(true) {
+      num = parseInt(prompt("양의 정수를 입력하시오"));
+      console.log(typeof(num));
+      console.log(num);
+      if(isNaN(num) || num < 0) {
+        alert("잘못된 입력");
+      }
+      else {
+        break;
+      }
+    }
+
+    let evenSum = 0;
+    let oddSum = 0;
+    for(let i = 1; i <= num; i++) {
+      if(i % 2 == 0) {
+        evenSum += i;
+      }
+      else {
+        oddSum += i;
+      }
+    }
+
+    document.write("N = " + num + " -> 홀수 합 = " + oddSum + ", 짝수 합 = " + evenSum);
+  </script>
+</body>
+</html>

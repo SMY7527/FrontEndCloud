@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>최소값 출력하기</h1>
+  
+  <script>
+    // 배열 생성 및 1~100까지의 랜덤한 수를 저장
+    let arr = new Array(10);
+    for(let i = 0; i < arr.length; i++) {
+      arr[i] = Math.floor(Math.random() * 100) + 1;
+    }
+
+    // 입력된 배열에서 최소값을 출력하는 함수
+    function minimumValue(numArr) {
+      let m = numArr[0];
+      // console.log(numArr);
+      // console.log(numArr.length);
+      // console.log(m);
+      if(numArr.length == 0 || m == undefined) return "잘못된 입력";
+
+      for(let i = 0; i < numArr.length; i++) {
+        if(m > numArr[i]) m = numArr[i];
+      }
+
+      return m;
+    }
+
+    // 결과 출력
+    document.write("배열 : [");
+    for(let i = 0; i < arr.length; i++) {
+      document.write(arr[i]);
+      if(i != arr.length - 1)
+        document.write(", ");
+    }
+    document.write("]<br>");
+
+    document.write("최소값 : " + minimumValue(arr));
+  </script>
+</body>
+</html>

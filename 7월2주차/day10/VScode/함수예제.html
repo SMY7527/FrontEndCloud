@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 입력X, 반환X
+    function funcA() {
+      alert("Hi Function!");
+    }
+
+    // 함수 호출
+    funcA();
+
+    // 입력O, 반환X
+    function funcB(cnt) {
+      for(let i = 0; i < cnt; i++) {
+        alert("Hi FuncB!");
+      }
+    }
+
+    funcB(3);
+
+    // 입력O, 반환O
+    // 기능 : 매개변수로 전달된 두 수를 더하는 기능
+    function funcC(a, b) {
+      let sum = a + b;
+      return sum;
+    }
+    let result = funcC(2, 3);
+    alert(result);
+
+    // 위치정보를 반환하는 함수
+    // 입력X, 반환O(위도, 경도)
+    function getPosition() {
+      let 위도 = 352.43;
+      let 경도 = 1948;
+
+      // 배열, 객체
+      let 위치 = {위도 : 352.43, 경도 : 3234};
+
+      return 위치;
+    }
+
+    let result위치 = getPosition();
+    console.log(result위치);
+    console.log(result위치.위도);
+    console.log(result위치.경도);
+
+
+    // 객체 맛보기
+    let snackName = "맛동산";
+    let snack = {
+      name : "맛동산",
+      price : 2800,
+      weight : "100g",
+      maker : "해태"
+    };
+
+    console.log(snack.name);
+    console.log(snack.price);
+    console.log(snack.maker);
+
+    // 로또번호 제공하기
+    // 입력X, 반환O(로또번호 6개)
+    function 로또번호가져오기() {
+      let lotts = [1,2,3,4,5,6];
+      return lotts;
+    }
+  </script>
+</body>
+</html>

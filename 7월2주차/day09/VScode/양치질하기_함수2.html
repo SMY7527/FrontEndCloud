@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 아침은 2번, 점심 5번, 저녁 4번행구는 
+    function 양치질하기아침() {
+      document.write("치약을 짠다^^<br>");
+      document.write("양치질을 한다.<br>");
+      document.write("행구기2<br>");
+    }
+
+    function 양치질하기점심() {
+      document.write("치약을 짠다^^<br>");
+      document.write("양치질을 한다.<br>");
+      document.write("행구기5<br>");
+    }
+
+    function 양치질하기저녁() {
+      document.write("치약을 짠다^^<br>");
+      document.write("양치질을 한다.<br>");
+      document.write("행구기4<br>");
+    }
+
+    양치질하기아침();
+    양치질하기점심();
+    양치질하기저녁();
+
+    // 함수
+    // 입력(매개변수) : 함수와 외부와의 매개자역할을 하는 함수
+    function 양치질하기ver2(cnt) {  // cnt => 매개변수
+      document.write("양치하기 ver2<br>");
+      document.write("치약을 짠다^^<br>");
+      document.write("양치질을 한다.<br>");
+      document.write("행구기" + cnt + "<br>");
+      // return;
+    }
+
+    양치질하기ver2(2);
+    양치질하기ver2(5);
+    양치질하기ver2(4);
+  </script>
+</body>
+</html>

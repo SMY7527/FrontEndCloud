@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 1. 홀수인지 판단하는 함수
+    function func1(arg) {
+      if(arg % 2 == 1) return true;
+      else return false;
+    }
+    // console.log(func1(3));
+
+    // 2. 성인판단하는 함수
+    function func2(arg) {
+      if(arg >= 20) return true;
+      else return false;
+    }
+    // console.log(func2(18));
+
+    // 3. 구구단 출력하는 함수
+    function func3(arg) {
+      for(let i = 1; i < 10; i++) {
+        console.log(arg + "*" + i + "=" + arg * i);
+      }
+    }
+    // console.log(func3(7));
+
+    // 4. 사각형의 넓이를 구하는 함수
+    function func4(arg1, arg2) {
+      return arg1 * arg2;
+    }
+    // console.log(func4(3, 5));
+
+    // 5. 두 수를 매개변수로 받아 합을 구하는 함수
+    function func5(arg1, arg2) {
+      return arg1 + arg2;
+    }
+    // console.log(func5(2, 4));
+
+    // 6. 두 수를 매개변수로 받아 나머지를 구하는 함수
+    function func6(arg1, arg2) {
+      return arg1 % arg2;
+    }
+    // console.log(func6(10, 2));
+
+    // 7. 입력된 수만큼 별찍기
+    function func7(arg) {
+      for(let i = 0; i < arg; i++) {
+        console.log("*");
+      }
+    }
+    console.log(func7(3));
+  </script>
+</body>
+</html>

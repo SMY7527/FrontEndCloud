@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 3.  이름 , 국어, 영어, 수학 3과목이 입력될 때   총점과  평균을 출력하기 
+    document.write("3.  이름 , 국어, 영어, 수학 3과목이 입력될 때   총점과  평균을 출력하기 ");
+    let name = prompt("이름을 입력하시오");
+    let kor = parseInt(prompt("국어점수를 입력하시오"));
+    let eng = parseInt(prompt("영어점수를 입력하시오"));
+    let math = parseInt(prompt("수학점수를 입력하시오"));
+    let totalScore = kor + eng + math;
+    let avgScore = totalScore / 3;
+
+    document.write("<br>이름 : " + name);
+    document.write("<br>국어 : " + kor);
+    document.write("<br>영어 : " + eng);
+    document.write("<br>수학 : " + math);
+    document.write("<br>총점 : " + totalScore);
+    document.write("<br>평균 : " + avgScore);
+  </script>
+</body>
+</html>

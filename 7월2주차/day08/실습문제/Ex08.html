@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 8. 점수에 따른 등급 
+    //   사용자가 입력한 점수에 따라 다음 등급을 출력하세요:
+    document.write("사용자가 입력한 점수에 따라 다음 등급을 출력하세요<br>");
+    let score = prompt("점수를 입력하시오");
+
+    if(score >= 90) {
+      document.write("A");
+    }
+    else if(score >= 80) {
+      document.write("B");
+    }
+    else if(score >= 70) {
+      document.write("C");
+    }
+    else if(score >= 60) {
+      document.write("D");
+    }
+    else {
+      document.write("F");
+    }
+  </script>
+</body>
+</html>

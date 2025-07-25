@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 12. 홀수만 출력
+    // 사용자가 입력한 숫자 N까지의 숫자 중 홀수만 출력하세요.
+    document.write("사용자가 입력한 숫자 N까지의 숫자 중 홀수만 출력하세요.<br>");
+    let num = prompt("수를 입력하시오");
+    for(let i = 1; i <= num; i++) {
+      if(i % 3 == 0) {document.write(i + "<br>");}
+    }
+  </script>
+</body>
+</html>

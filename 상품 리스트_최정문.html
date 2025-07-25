@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list_warp{
+            height: 600px;
+            width: 1200px;
+        }
+        .item{
+            display: flex;
+            border: 3px solid rebeccapurple;
+        }
+        .list_img, .list_name, .list_price, .list_cnt{
+            width: 300px;
+            border: 1px solid black;
+        }
+        .list_sum{
+            width: 1200px;
+            text-align: center;
+            justify-content: center;
+            border: 3px solid rebeccapurple;
+        }
+        .title{
+            display: flex;
+            border: 3px solid rebeccapurple;
+        }
+
+    </style>    
+</head>
+<body>
+    <h1>장바구니</h1>
+    <div class="list_warp">
+
+
+    </div>
+    <script>
+        let product=[
+            {name:"pro1",price:3600,cnt:1,img:"https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0014/A00000014950136ko.jpg?l=ko"},
+            {name:"pro2",price:3700,cnt:2,img:"https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0020/A00000020424716ko.jpg?l=ko"},
+            {name:"pro3",price:3800,cnt:3,img:"https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/400/10/0000/0021/A00000021673406ko.jpg?l=ko"},
+        ];
+        let product_sum=(product)=>{
+            sum=0;
+            for(let i=0;i< product.length;i++){
+                sum+=product[i].price*product[i].cnt
+            }
+            return sum;
+
+        };
+        
+        //alert(product_sum(product));
+
+        const listWrap = document.querySelector('.list_warp');
+        
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'title';
+        titleDiv.innerHTML = `
+            <div class=list_img>제품사진</div>
+            <div class=list_name>제품명</div>
+            <div class=list_price>가격(원)</div> 
+            <div class=list_cnt>수량(개)</div>
+            `;
+        listWrap.appendChild(titleDiv);
+        
+        product.forEach(p => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item';
+            itemDiv.innerHTML = `
+            <div class=list_img><img src="${p.img}" alt="${p.name}" width="100"></div>
+            <div class=list_name>${p.name}</div>
+            <div class=list_price>${p.price}원</div> 
+            <div class=list_cnt>수량: ${p.cnt}</div>
+            `;
+            listWrap.appendChild(itemDiv);
+        });
+
+        const sumDiv = document.createElement('div');
+        sumDiv.className = 'sum';
+        sumDiv.innerHTML = `<div class=list_sum>합계 |${product_sum(product)} 원</div>`;
+        listWrap.appendChild(sumDiv);
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 메뉴 선택시 다른 코드 실행하기
+    // let menu = 3; // 1.입력, 2.조회, 3.변경, 4.삭제, 5.종료
+    // prompt(); : 입력된 값을 문자열로 반환
+    // parseInt(); : 정수형 숫자로 형변환
+    
+    let menu;
+    menu = parseInt(prompt("메뉴를 선택하시오"));
+
+    switch(menu) {
+      case 1:
+        alert("입력합니다");
+        break;
+      case 2:
+        alert("조회합니다");
+        break;
+      case 3:
+        alert("변경합니다");
+        break;
+      case 4:
+        alert("삭제합니다");
+        break;
+      case 5:
+        alert("종료합니다");
+        break;
+      default:
+        alert("잘못된 메뉴 선택");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn_gotcha" onclick="buttonClickGotch()">뽑기</button>
+  
+  <script>
+    // 간단한 뽑기 시스템 만들기
+    function gotcha(arg) {
+      let isArray = arg[0];
+      if(arg.length == 0 || isArray == undefined) return "잘못된 입력";
+
+      let rank = new Array(arg.length);
+      for(let i = 0; i < arg.length; i++) {
+        if(arg[i] > 95) {
+          rank[i] = "S";
+        }
+        else if(arg[i] > 80) {
+          rank[i] = "A";
+        }
+        else if(arg[i] > 70) {
+          rank[i] = "B";
+        }
+        else if(arg[i] > 55) {
+          rank[i] = "C";
+        }
+        else {
+          rank[i] = "F";
+        }
+      }
+
+      return rank;
+    }
+    
+    function buttonClickGotch() {
+      let arrPool = new Array(10);
+      for(let i = 0; i < arrPool.length; i++) {
+        arrPool[i] = Math.floor(Math.random() * 100) + 1;
+      }
+
+      let result = gotcha(arrPool);
+
+      document.write("<br>");
+      for(let i = 0; i < result.length; i++) {
+        document.write(result[i]);
+      }
+    }
+    
+  </script>
+</body>
+</html>

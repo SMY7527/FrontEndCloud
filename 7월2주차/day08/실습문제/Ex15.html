@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 15.   9번을  음수가  입력될 때 까지 반복하기
+    document.write("9번을  음수가  입력될 때 까지 반복하기<br>");
+    let num;
+    while(true) {
+      num = prompt("수를 입력하시오");
+      if(num < 0) {break;}
+      document.write(num + "^2 = " + num ** 2);
+      document.write("<br>");
+    }
+  </script>
+</body>
+</html>

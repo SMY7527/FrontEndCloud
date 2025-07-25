@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 배열만들면서 초기화
+    let arr = ["롯데리아", "버거킹", "맥도날드", "맘스터치", "쉑쉑버거"];
+
+    // let arr2 = new Array(5);
+
+    // 배열의 값 가져오기
+    // 배열의 요소 == 변수와 같다(배열의 요소는 변수와 동일)
+    // 배열명을 기준으로 해서 index(첨자)로 접근한다
+    // index값은 0부터 시작한다
+
+    let food1 = arr[0];
+    let food2 = arr[1];
+    let food3 = arr[2];
+
+    console.log(food1);
+    console.log(food2);
+    console.log(arr[2]);
+
+    let fruits = new Array(5);
+    // 배열요소연산자[], index
+
+    // 배열요소에 값 넣기
+    fruits[0] = "수박";
+    fruits[1] = "딸기";
+    fruits[2] = "자두";
+    fruits[3] = "사과";
+    fruits[4] = "참외";
+
+    // 
+    console.log(fruits[0]);
+    console.log(fruits[1]);
+    console.log(fruits[2]);
+    console.log(fruits[3]);
+    console.log(fruits[4]);
+
+    // 반복문
+    // 배열의 첨자(index)에 변수를 사용할 수 있다.
+    for(let i = 0; i < 5; i++) {
+      console.log(fruits[i]);
+    }
+  </script>
+</body>
+</html>

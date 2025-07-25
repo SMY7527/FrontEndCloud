@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 11. 사칙연산 계산기  (if, switch문)
+    // 사용자가 입력한 두 숫자와 연산자(+, -, *, /)를 사용하여 결과를 출력하세요.
+    document.write("사용자가 입력한 두 숫자와 연산자(+, -, *, /)를 사용하여 결과를 출력하세요.<br>");
+    let num1 = parseInt(prompt("첫 번째 수를 입력하시오"));
+    let num2 = parseInt(prompt("두 번째 수를 입력하시오"));
+    let cal = prompt("수행할 사칙연산(+, -, *, /)을 입력하시오");
+    let result;
+
+    switch(cal) {
+      case "+":
+        result = num1 + num2;
+        document.write(num1 + " + " + num2 + " = " + result);
+        break;
+      case "-":
+        result = num1 - num2;
+        document.write(num1 + " - " + num2 + " = " + result);
+        break;
+      case "*":
+        result = num1 * num2;
+        document.write(num1 + " * " + num2 + " = " + result);
+        break;
+      case "/":
+        result = num1 / num2;
+        document.write(num1 + " / " + num2 + " = " + result);
+        break;
+    }
+  </script>
+</body>
+</html>

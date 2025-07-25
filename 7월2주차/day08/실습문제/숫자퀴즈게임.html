@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1. 숫자 퀴즈 게임
+    //   문제: 컴퓨터가 1부터 100 사이의 난수를 생성합니다. 사용자는 이 숫자를 맞춰야 합니다.
+    //   사용자가 입력한 숫자가 정답보다 작으면 "더 큰 숫자입니다"를 출력합니다.
+    //   사용자가 입력한 숫자가 정답보다 크면 "더 작은 숫자입니다"를 출력합니다.
+    //   정답을 맞추면 "정답입니다! 시도 횟수: X번"을 출력하고 종료합니다.
+
+    let num = Math.floor(Math.random() * 100) + 1;
+    let userNum;
+    let cnt = 0;
+
+    while(true) {
+      userNum = prompt("1부터 100사이의 정수를 입력하시오");
+      cnt++;
+
+      if(userNum < num) {
+        alert("더 큰 숫자입니다.");
+      }
+      else if (userNum > num) {
+        alert("더 작은 숫자입니다.");
+      }
+      else {
+        alert("정답입니다! 시도 횟수 : " + cnt + "번");
+        break;
+      }
+    }
+  </script>
+</body>
+</html>

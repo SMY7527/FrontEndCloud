@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // break문 : 반복문에서 break를 사용하면 자신이 속한 반복문을 빠져나오게함(탈출함)
+
+    // 3번 인사하기
+    let cnt = 0;
+    while(true) { // while(true) 조건으로 명령을 작성할 때는 반드시 break문을 사용하여 빠져나와야한다
+      console.log("HI");
+      // 특정 조건일 때 반복을 탈출하게 함
+      cnt++;
+      if(cnt >= 3) break;
+    }
+  </script>
+</body>
+</html>

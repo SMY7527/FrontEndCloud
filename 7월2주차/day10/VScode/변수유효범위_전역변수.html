@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+
+        //전역변수 : 함수외부에서 만들어지는 변수  
+        //
+        let num = 0;
+        function a() {
+            num++;  // num = num+1;
+        }
+        function b() {
+
+            num++;
+        }
+
+        console.log(num);
+
+        a();
+        console.log(num);
+        a();
+        console.log(num);
+        b();
+        console.log(num);
+
+
+    </script>
+
+</body>
+
+</html>

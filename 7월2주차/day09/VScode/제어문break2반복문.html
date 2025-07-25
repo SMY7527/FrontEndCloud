@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 사용자 메뉴 선택하기 => 반복하기
+    // let whileLoop = true;
+
+    // 이름있는 반복문
+    // 반복문안에 switch문이 있을 때
+    // 반복문안에 반복문이 있을 때, 바깥쪽 반복문을 빠져나갈 때 사용함
+    loop: while(true) {
+      let menu = parseInt(prompt("1.등록, 2.조회, 3.종료"));
+
+      switch(menu) {
+        case 1:
+          alert("등록");
+          break;
+        case 2:
+          alert("조회");
+          break;
+        case 3:
+          alert("종료");
+          // whileLoop = false;
+          break loop;
+        default:
+          alert("잘못된 입력");
+      }
+    }
+  </script>
+</body>
+</html>

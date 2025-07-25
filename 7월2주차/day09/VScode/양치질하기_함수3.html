@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function 양치질하기ver3 (cnt) {
+      let result;
+      document.write("치약을 짠다^^<br>");
+      document.write("양치질을 한다.<br>");
+      document.write("행구기" + cnt + "<br>");
+
+      result = 1;
+      return result;
+    }
+
+    // 함수가 호출되면 기능을 수행하고 호출한 곳으로 돌아옴
+    let time = 양치질하기ver3(3);
+    console.log(time);
+
+    if(time < 2) {
+      alert("다음부턴 2분은 꼭 되게 해");
+    }
+  </script>
+</body>
+</html>

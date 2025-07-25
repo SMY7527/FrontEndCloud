@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 먼저 풀어보기
+    // 1) 사과의 무게를 입력받아 200이상이면 고급 아니면 일반으로 분류하기 (출력하시오)
+    document.write("1) 사과의 무게를 입력받아 200이상이면 고급 아니면 일반으로 분류하기 (출력하시오)<br>");
+    let appleWeight = prompt("사과의 무게를 입력하시오");
+    let apple = appleWeight >= 200 ? "고급" : "일반";
+    document.write(appleWeight + "kg " + apple);
+
+    document.write("<br><br><hr><br>");
+    // 2) 입력한 수가  3의 배수인지 확인하기 
+    document.write("2) 입력한 수가  3의 배수인지 확인하기<br>");
+    let isMulOfThree = appleWeight % 3 == 0 ? appleWeight + "는 3의 배수입니다" : appleWeight + " 는 3의 배수가 아닙니다";
+    document.write(isMulOfThree);
+  </script>
+</body>
+</html>

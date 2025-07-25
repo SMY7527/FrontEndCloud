@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+  삼항연산자는 간단한 조건문을 한 줄로 작성할 수 있게 한다.
+  조건 ? 식1 : 식2;
+  조건 : 평가할 조건
+  조건이 참이면 식1 실행
+  조건이 거짓이면 식2 실행
+   -->
+
+  <script>
+    let num1 = 20, num2 = 10;
+    let max;
+
+    if(num1 > num2) {
+      max = num1;
+    }
+    else {
+      max = num2;
+    }
+    console.log(max);
+
+    // 삼항연산자
+    let su1 = 30, su2 = 20;
+    let resultMax;
+
+    resultMax = su1 > su2 ? su1 : su2;
+    console.log(resultMax);
+  </script>
+</body>
+</html>

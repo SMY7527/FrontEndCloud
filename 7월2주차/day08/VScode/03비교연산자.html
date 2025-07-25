@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 비교 연산자    =>    참, 거짓을 반환
+    // ==, ===, !=, !==, >, >=, <, <=
+
+    let num1 = 10;
+    let num2 = 3;
+    console.log(num1 > num2);   // 크다
+    console.log(num1 == num2);  // 가타
+    console.log(num1 < num2);   // 미만
+    console.log(num1 <= num2);  // 이하
+    console.log(num1 >= num2);  // 이상
+    console.log(num1 != num2);  // 같지않다
+
+    // 엄격한 비교
+    let a = 10;
+    let b = "10";
+
+    console.log(a == b);  // true, 자동형변환해서 비교
+    console.log(a === b); // false, type까지 비교해서 같아야 참으로나옴
+    console.log(num1 === num2);
+
+    console.log(a != b);  // false
+    console.log(a !== b); // true
+    console.log(num1 !== num2);
+  </script>
+</body>
+</html>
