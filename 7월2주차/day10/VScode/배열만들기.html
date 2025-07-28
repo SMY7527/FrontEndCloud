@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 1차원 배열
+    const fruits = ["사과", "바나나", "포도"];
+    for (let i = 0; i < fruits.length; i++) {
+      console.log(fruits[i]);
+    }
+
+    // 2차원 배열
+    const matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ];
+    for (let i = 0; i < matrix.length; i++) {
+      for (let j = 0; j < matrix[i].length; j++) {
+        console.log(matrix[i][j]);
+      }
+    }
+
+    // 3차원 배열
+    const words3D = [
+      [ // 첫 번째 그룹
+        ["apple", "banana", "cherry", "date", "fig", "grape", "kiwi", "lemon"],
+        ["lion", "tiger", "zebra", "giraffe", "monkey", "panda", "bear", "wolf"],
+        ["red", "blue", "green", "yellow", "purple", "pink", "black", "white"]
+      ],
+      [ // 두 번째 그룹
+        ["car", "bus", "train", "plane", "bike", "truck", "boat", "scooter"],
+        ["pen", "pencil", "ruler", "eraser", "marker", "notebook", "book", "crayon"],
+        ["table", "chair", "sofa", "bed", "lamp", "desk", "shelf", "mirror"]
+      ],
+      [ // 세 번째 그룹
+        ["run", "walk", "jump", "sit", "stand", "sleep", "eat", "drink"],
+        ["happy", "sad", "angry", "scared", "excited", "bored", "tired", "proud"],
+        ["sun", "moon", "star", "cloud", "rain", "snow", "wind", "storm"]
+      ]
+    ];
+    for (let i = 0; i < words3D.length; i++) {
+      for (let j = 0; j < words3D[i].length; j++) {
+        for(let k = 0; k < words3D[i][j].length; k++) {
+          console.log(words3D[i][j][k]);
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

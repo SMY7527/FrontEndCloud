@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 배열 거꾸로 출력하기
+    //           0       1        2
+    let arr = ["수박", "자두", "복숭아"];
+    console.log(arr[2]);
+    console.log(arr[1]);
+    console.log(arr[0]);
+
+    // 반복문
+    for(let i = 0; i < arr.length; i++) {
+      console.log(arr[arr.length - i - 1]);
+    }
+    for(let i = arr.length - 1; i >= 0; i--) {
+      console.log(arr[i]);
+    }
+
+    // 배열 내용을 거꾸로한 새로운 배열 만들기
+    {
+      let arr = ["수박", "자두", "복숭아"];
+      let arrNew = [];
+
+      // 배열에 추가하는 기능(함수, 메서드)
+      // push 사용해보기
+      for(let i = arr.length - 1; i >= 0; i--) {
+        console.log(arr[i]);
+        arrNew.push(arr[i]);
+      }
+      
+      console.log(arrNew);
+    }
+  </script>
+</body>
+</html>

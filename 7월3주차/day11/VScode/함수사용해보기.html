@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //1.  랜덤 주사위 굴리기 함수
+
+        function rollDice() {
+            const dice = Math.floor(Math.random() * 6) + 1;
+            console.log(`🎲 주사위 결과: ${dice}`);
+        }
+
+        rollDice();
+
+        // 2.   가위바위보 게임
+
+        function playRPS(userChoice) {
+            const choices = ["가위", "바위", "보"];
+            const computer = choices[Math.floor(Math.random() * 3)];
+
+            console.log(`당신: ${userChoice} vs 컴퓨터: ${computer}`);
+
+            if (userChoice === computer) {
+                console.log("😐 비겼습니다!");
+            } else if (
+                (userChoice === "가위" && computer === "보") ||
+                (userChoice === "바위" && computer === "가위") ||
+                (userChoice === "보" && computer === "바위")
+            ) {
+                console.log("😎 이겼습니다!");
+            } else {
+                console.log("😢 졌습니다!");
+            }
+        }
+
+        playRPS("가위");
+
+
+        // 3.   오늘의 운세 뽑기
+
+        function getFortune() {
+            const fortunes = [
+                "대박! 🍀",
+                "무난한 하루 😊",
+                "조심하세요 ⚠️",
+                "새로운 기회 등장! 🚀",
+                "잠깐 쉬어가도 좋아요 ☕",
+                "로또 사러 가세요 💸"
+            ];
+            const today = fortunes[Math.floor(Math.random() * fortunes.length)];
+            console.log(`🔮 오늘의 운세: ${today}`);
+        }
+        getFortune();
+
+        //4.   질문하면 예/아니오 대답해주는 함수
+
+        function askYesNo(question) {
+            const answers = ["네!", "아니요!", "글쎄요 🤔", "당연하죠!", "절대 안돼요!"];
+            const reply = answers[Math.floor(Math.random() * answers.length)];
+            console.log(`Q: ${question}`);
+            console.log(`A: ${reply}`);
+        }
+        askYesNo("안녕");
+
+        //   입력한 문장을 뒤집어주는 함수
+
+        function reverseText(text) {
+            const reversed = text.split("").reverse().join("");
+            console.log(`원래: ${text}`);
+            console.log(`뒤집기: ${reversed}`);
+        }
+        reverseText("자바스크립트");
+
+        function reverseTextManual(text) {
+            const arr = text.split(""); // 문자열을 배열로 변환
+            let left = 0;
+            let right = arr.length - 1;
+
+            while (left < right) {      //01   2 2   3 4
+                // 배열의 앞과 뒤를 바꿈
+                let temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+
+                left++;
+                right--;
+            }
+
+            const reversed = arr.join(""); // 다시 문자열로
+            console.log(`원래: ${text}`);
+            console.log(`뒤집기: ${reversed}`);
+        }
+        reverseTextManual("JAVA");
+
+    </script>
+
+</body>
+
+</html>

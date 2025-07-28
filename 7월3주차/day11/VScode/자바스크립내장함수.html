@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // parseInt() / parseFloat()
+    //문자열을 숫자로 변환할 때 사용함 
+    console.log(parseInt("123px"));   // 123
+    console.log(parseFloat("3.14m")); // 3.14
+
+
+    // isNaN()
+    //값이 NaN인지 확인함.   
+    // 숫자가 아니면  true, false
+    //Not a Number  숫자가 아니다.
+    // 입력된 값이나 수식이 숫자가 아닌지 판별할 때 사용
+    // NaN값을 판달할 때 사용
+    // NaN판별시 반드시 isNaN()사용 (==, === 으로는 판별 불가)
+    console.log("안녕" * 2);       // NaN : 숫자가 아닌값을 의미
+    console.log(isNaN("hello"));   // true
+    console.log(isNaN(123));       // false
+
+
+    // Math.random() / Math.floor()
+    // 랜덤 숫자 생성 시 자주 사용함 
+    let rand = Math.floor(Math.random() * 10) + 1;  // 1부터 10까지 랜덤 정수
+    console.log(rand);
+
+
+    // Number()
+    //문자열을 숫자로 변환함.
+    let num = Number("42");
+    let num2 = Number("42안녕");
+    console.log(num + 8); // 50
+    console.log(num2);  // NaN
+
+
+    // toFixed()
+    //소수점 자리수 고정할 때 사용함
+    let pi = 3.14159;
+    console.log(pi.toFixed(2)); // "3.14"
+
+
+    //JSON.stringify() / JSON.parse()
+    //객체와 문자열을 상호 변환할 때 사용
+    let obj = { name: "영희", age: 25 };
+    let str = JSON.stringify(obj);   // 객체 → 문자열
+    console.log(str);                // '{"name":"영희","age":25}'
+
+    let newObj = JSON.parse(str);    // 문자열 → 객체
+    console.log(newObj.name);        // "영희"
+
+
+    // Date 객체
+    //날짜/시간 관련 정보를 가져옴 
+    let now = new Date();
+    console.log(now.getFullYear()); // 현재 연도
+    console.log(now.getMonth() + 1); // 현재 월 (0부터 시작하므로 +1)
+    console.log(now.getDate());     // 현재 일
+
+  </script>
+</body>
+
+</html>

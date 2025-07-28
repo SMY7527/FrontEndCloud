@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    //1. 문제: 아래 과일 배열에서 첫 번째와 세 번째 요소를 출력하세요.
+    const 과일 = ['apple', 'banana', 'cherry'];
+
+    console.log(과일[0]);
+    console.log(과일[2]);
+
+    //2. 문제: 아래 배열 컬러 길이를 출력하세요.
+    const 컬러 = ['red', 'blue', 'green', 'yellow'];
+
+    console.log(컬러.length);
+
+    //3. 문제: 아래 배열 점수에 있는 모든 숫자의 합을 계산하세요.
+    const 점수 = [10, 20, 30, 40];
+
+    let sum = 0;
+    for(let i = 0; i < 점수.length; i++) {
+      sum += 점수[i];
+    }
+    console.log(sum);
+
+    //4.문제: 아래 이름 배열의 각 요소를 순서대로 출력하세요.
+    const 이름 = ['영숙', '순자', '영자', '옥순', '현숙'];
+
+    for(let i = 0; i < 이름.length; i++) {
+      console.log(이름[i]);
+    }
+
+    //5. 문제: 아래 numbers 배열에서 숫자 7이 있는지 확인하고, 있으면 true , 아니면 false를 출력하세요.
+    const numbers1 = [2, 4, 6, 8, 10];
+
+    let isNum7 = false;
+    for(let i = 0; i < numbers1.length; i++) {
+      if(numbers1[i] == 7) isNum7 = true;
+    }
+    console.log(isNum7);
+
+    //6. 문제: 아래 numbers 배열에서  가장 큰 수 를 출력하시오
+    const numbers2 = [12, 41, 6, 18, 10];
+
+    let max = 0;
+    for(let i = 0; i < numbers2.length; i++) {
+      if(numbers2[i] > max) max = numbers2[i];
+    }
+    console.log(max);
+
+    //7. 문제: 아래  kors 배열에서  총점과 평균을 출력하시오
+    const kors1 = [90, 80, 70, 99, 100];
+
+    let total = 0;
+    for(let i = 0; i < kors1.length; i++) {
+      total += kors1[i];
+    }
+    console.log(total);
+    console.log(total / kors1.length);
+
+    //8. 문제: 아래  kors 배열에서   평균보다 높은 점수는 몇개인가 ?
+    const kors2 = [90, 80, 70, 99, 100];
+
+    {
+      let total = 0;
+      for(let i = 0; i < kors2.length; i++) {
+        total += kors2[i];
+      }
+
+      let avg = total / kors2.length;
+      let cnt = 0;
+      for(let i = 0; i < kors2.length; i++) {
+        if(kors2[i] > avg)  cnt++;
+      }
+      console.log(cnt);
+    }
+
+    //9. 문제: 아래 prices 배열에서 1200보다 큰 숫자만 골라 새로운 배열에 저장하세요.
+    const prices = [1000, 1500, 900, 1800, 2000, 1200];
+
+    let newArr = [];
+    for(let i = 0; i < prices.length; i++) {
+      if(prices[i] > 1200) {
+        newArr.push(prices[i]);
+      }
+    }
+    for(let i = 0; i < newArr.length; i++) {
+      console.log(newArr[i]);
+    }
+
+    //10.  문제: 아래 numbers 배열의 각 요소를 2배로 만든 새로운 배열을 만드세요.
+    const numbers = [1, 2, 3, 4, 5];
+
+    let newArr2 = [];
+    for(let i = 0; i < numbers.length; i++) {
+      newArr2.push(numbers[i] * 2);
+    }
+
+    for(let i = 0; i < newArr2.length; i++) {
+      console.log(newArr2[i]);
+    }
+
+    //11.  문제 :아래  fruits 배열에  자두 포함 여부 true, false 출력하시오 
+    let fruits1 = ["자두", "복숭아", "포도"];
+
+    let isPlum = false;
+    for(let i = 0; i < fruits1.length; i++) {
+      if(fruits1[i] == "자두") isPlum = true;
+    }
+    console.log(isPlum);
+
+    //12.  문제 :아래  fruits 배열을  거꾸로 출력하시오  
+    let fruits2 = ["자두", "복숭아", "포도"];
+
+    for(let i = 0; i < fruits2.length; i++) {
+      console.log(fruits2[fruits2.length - i - 1]);
+    }
+
+    //13.  문제 :아래  fruits 배열을  거꾸로 순서대로 한 새로운 배열을 만드시오  
+    let fruits3 = ["자두", "복숭아", "포도"];
+
+    let newFruits = [];
+    for(let i = 0; i < fruits2.length; i++) {
+      newFruits.push(fruits2[fruits2.length - i - 1]);
+    }
+
+    for(let i = 0; i < newFruits.length; i++) {
+      console.log(newFruits[i]);
+    }
+
+  </script>
+</body>
+
+</html>

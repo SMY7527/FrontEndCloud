@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 함수 : 코드덩어리에 이름을 붙혀놓은 것
+    // 함수호출을 통해서 코드가 실행됨
+
+    // 기능 : 평균구하기
+    // 입력(매개변수) : 정수형배열
+    // 반환 : 배열의 평균 값
+    function 평균구하기(a) {
+      let sum = 0;
+      for (let i = 0; i < a.length; i++) {
+        sum = sum + a[i];
+      }
+
+      let avg = sum / a.length;
+      return avg;
+    }
+    //
+    let score = [90, 80, 70, 60];
+    let result = 평균구하기(score);
+    console.log(result);
+
+    //기능: 로또정보를 반환하는 함수 
+    //입력: x
+    //반환 :  특정회차반환  (1차배열을 반환)
+    function lotto1() {
+      let lotto1182 = [1, 13, 21, 25, 28, 31];
+      return lotto1182;
+    }
+
+    //기능: 로또정보를 반환하는 함수 
+    //입력: x
+    //반환 :  7월달 로또정보반환  (2차원배열 반환)
+    function lotto2() {
+      let lottoMonth7 = [
+        [1, 13, 21, 25, 28, 31],
+        [8, 10, 14, 20, 33, 41],
+        [6, 12, 18, 37, 40, 41]
+      ];
+      return lottoMonth7;
+    }
+
+    //기능: 로또정보를 반환하는 함수 
+    //입력: x
+    //반환 :  2025년 로또정보반환  (3차원배열 반환함수)
+    function lotto3() {
+      let lottoYear = [
+        // 0면
+        [
+          [1, 13, 21, 25, 28, 31],
+          [8, 10, 14, 20, 33, 41],
+          [6, 12, 18, 37, 40, 41]
+        ],
+        // 1면
+        [
+          [1, 13, 21, 25, 28, 31],
+          [8, 10, 14, 20, 33, 41],
+          [6, 12, 18, 37, 40, 41]
+        ],
+        // 2면
+        [
+          [1, 13, 21, 25, 28, 31],
+          [8, 10, 14, 20, 33, 41],
+          [6, 12, 18, 37, 40, 41]
+        ]
+      ];
+      return lottoYear;
+    }
+
+    function func1() {
+      return 5;
+    }
+
+    // 함수의 반환은 반드시 없거나 한 개여야 한다
+    function func2() {
+      let a = 10, b = 8;
+      return a, b;  // 이건 안된다
+    }
+    {
+      let result = func1();
+      console.log(result);
+    }
+    let result2 = func2();
+    console.log(result2);
+
+    function func3() {
+      let a = 10, b = 3;
+      let arr = [a, b];
+      return arr;
+    }
+    result = func3();
+    console.log(result);
+
+    // 문제1) 배열(1차원, 2차원, 3차원)을 반환하는 함수 만들기
+    function reArray1() {
+      let arr = [3, 2, 6, 4, 5, 9];
+      return arr;
+    }
+
+    // 문제2) 매개변수로 입력받아서 1차원, 2차원, 3차원별의 내용을 반환하는 함수 만들기
+    function reArray2(...args) {
+      let newArr = [];
+      for(arg of args) {
+        console.log(arg);
+        newArr.push(arg);
+      }
+      return newArr;
+    }
+
+    console.log(reArray2([1, 2, 3], [4, 5, 6], [7, 8, 9]));
+  </script>
+</body>
+
+</html>

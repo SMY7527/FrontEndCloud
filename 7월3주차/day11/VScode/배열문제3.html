@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let scores = [90, 80, 77, 100, 89];
+
+    // 가장 큰 수를 저장할 변수
+    // 초기값 설정은 배열의 첫 번째 값으로 초기화
+    let max = scores[0];
+    for(let i = 1; i < scores.length; i++) {
+      console.log("max : " + max);
+      console.log(`scores[${i}] ${scores[i]}`);
+      if(scores[i] > max) max = scores[i];
+    }
+    console.log(max);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    let lottoYear = [
+      // 0면
+      [
+        [1, 13, 21, 25, 28, 31],
+        [8, 10, 14, 20, 33, 41],
+        [6, 12, 18, 37, 40, 41]
+      ],
+      // 1면
+      [
+        [1, 13, 21, 25, 28, 31],
+        [8, 10, 14, 20, 33, 41],
+        [6, 12, 18, 37, 40, 41]
+      ],
+      // 2면
+      [
+        [1, 13, 21, 25, 28, 31],
+        [8, 10, 14, 20, 33, 41],
+        [6, 12, 18, 37, 40, 41]
+      ]
+    ];
+
+    console.log(lottoMonth7[0][0][0]);
+    console.log(lottoMonth7[0][0][1]);
+    console.log(lottoMonth7[0][0][2]);
+
+    // 반복문   행 i x 3, 열 j x 6
+    for (let i = 0; i < 3; i++) {
+      console.log(`${i}행`);
+      for (let j = 0; j < 3; j++) {
+        for(let k = 0; k < 6; k++) {
+          console.log(lottoMonth7[i][j][k]);
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

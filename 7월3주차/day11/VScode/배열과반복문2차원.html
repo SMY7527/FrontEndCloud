@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    let lotte1182 = [1, 13, 21, 25, 28, 31];  // 0행
+    let lotte1181 = [8, 10, 14, 20, 33, 41];  // 1행
+    let lotte1180 = [6, 12, 18, 37, 40, 41];  // 2행
+
+    // 1차원 배열 3개로 데이터 유지하기
+    // 행, 열로 접근해야 네모상자(변수)에 접근할 수 있다
+    // 행만 접근하면 1차원 배열까지 접근한 것임
+    // 2차원 배열의 요소로 1차원 배열이다
+    let lottoMonth7 = [
+      [1, 13, 21, 25, 28, 31],
+      [8, 10, 14, 20, 33, 41],
+      [6, 12, 18, 37, 40, 41]
+    ];
+
+    // 2차원 배열 1개로 데이터 유지
+    console.log(lottoMonth7[0][0]);
+    console.log(lottoMonth7[0][1]);
+    console.log(lottoMonth7[0][2]);
+
+    // 반복문   행 i x 3, 열 j x 6
+    for(let i = 0; i < 3; i++) {
+      console.log(`${i}행`);
+      for(let j = 0; j < 6; j++) {
+        console.log(lottoMonth7[i][j]);
+      }
+    }
+  </script>
+</body>
+
+</html>
